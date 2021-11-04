@@ -7,12 +7,12 @@ It is used in a special way (for C)
 
 int main(int argc, char** argv)
 {
-	new_allocator(myAllocator, 255/*bytes for the allocator*/);
+    new_allocator(myAllocator, 255/*bytes for the allocator*/);
 
     int* myInt = memalloc(&myAllocator, sizeof(int));
 
     memfree(myInt); // You don't even need to free it, the system will do it for you
 
-	return 0;
+    return 0;
 }
 ```
